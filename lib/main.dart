@@ -5,388 +5,176 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white60,
         body: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Expanded(
-                flex: 1,
-                child: Stack(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(top: 20, left: 10, right: 10),
-                      width: double.infinity,
-                      clipBehavior: Clip.antiAlias,
-                      child: const Image(
-                        fit: BoxFit.cover,
-                        image: NetworkImage(
-                            'https://images.unsplash.com/photo-1609369458199-b9fa5e4ec86a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8&w=1000&q=80'),
-                      ),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(20),
-                        ),
-                      ),
-                      foregroundDecoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        gradient: LinearGradient(
-                          colors: [
-                            Color.fromARGB(255, 209, 96, 213).withOpacity(0.8),
-                            Color.fromARGB(255, 226, 119, 31).withOpacity(0.7)
-                          ],
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(left: 30),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding:
-                                EdgeInsets.only(top: 40, bottom: 80, left: 10),
-                            child: Icon(
-                              Icons.travel_explore_sharp,
-                              size: 50,
-                              color: Colors.white,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10, left: 10),
-                            child: Text(
-                              'Nature`s Light',
-                              style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(left: 10),
-                            child: Text(
-                              '450 spots',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                )),
-            Expanded(
-              flex: 2,
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Expanded(
-                    flex: 1,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Expanded(
-                          flex: 1,
-                          child: Stack(
-                            children: [
-                              Container(
-                                margin: EdgeInsets.all(10),
-                                clipBehavior: Clip.antiAlias,
-                                width: double.infinity,
-                                height: double.infinity,
-                                decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                      fit: BoxFit.cover,
-                                      image: NetworkImage(
-                                          'https://www.ecieco.org/Content/media/image/2023/05/9568_orig.jpg')),
-                                  color: Colors.amber.shade400,
-                                  borderRadius: BorderRadius.all(
-                                    Radius.circular(20),
-                                  ),
-                                ),
-                                foregroundDecoration: BoxDecoration(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20)),
-                                  gradient: LinearGradient(
-                                    colors: [
-                                      Color.fromARGB(255, 253, 195, 235)
-                                          .withOpacity(0.8),
-                                      Color.fromARGB(255, 64, 246, 224)
-                                          .withOpacity(0.7)
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Container(
-                                margin: EdgeInsets.only(left: 30),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsets.only(
-                                          top: 30, bottom: 10, left: 10),
-                                      child: Icon(
-                                        Icons.theater_comedy_outlined,
-                                        size: 50,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                          EdgeInsets.only(top: 10, left: 10),
-                                      child: Text(
-                                        'Cultural',
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsets.only(left: 10),
-                                      child: Text(
-                                        '257 spots',
-                                        style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                            flex: 2,
-                            child: Stack(
-                              children: [
-                                Container(
-                                  margin: EdgeInsets.all(10),
-                                  clipBehavior: Clip.antiAlias,
-                                  width: double.infinity,
-                                  height: double.infinity,
-                                  child: Image(
-                                    fit: BoxFit.cover,
-                                    image: NetworkImage(
-                                        'https://images.pexels.com/photos/337901/pexels-photo-337901.jpeg?cs=srgb&dl=pexels-pavlo-luchkovski-337901.jpg&fm=jpg'),
-                                  ),
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(20),
-                                    ),
-                                  ),
-                                  foregroundDecoration: BoxDecoration(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(20)),
-                                    gradient: LinearGradient(
-                                      colors: [
-                                        Color.fromARGB(255, 81, 156, 217)
-                                            .withOpacity(0.8),
-                                        Colors.deepOrangeAccent.withOpacity(0.7)
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  margin: EdgeInsets.only(left: 30),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Padding(
-                                        padding: EdgeInsets.only(
-                                            top: 60, bottom: 70, left: 10),
-                                        child: Icon(
-                                          Icons.mosque_outlined,
-                                          size: 50,
-                                          color: Colors.white,
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding:
-                                            EdgeInsets.only(top: 100, left: 10),
-                                        child: Text(
-                                          'Populariti',
-                                          style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsets.only(left: 10),
-                                        child: Text(
-                                          '357 spots',
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            )),
-                      ],
-                    ),
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Expanded(
-                            flex: 2,
-                            child: Stack(
-                              children: [
-                                Container(
-                                  margin: EdgeInsets.all(10),
-                                  clipBehavior: Clip.antiAlias,
-                                  width: double.infinity,
-                                  height: double.infinity,
-                                  decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                      fit: BoxFit.cover,
-                                      image: NetworkImage(
-                                          'https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'),
-                                    ),
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(20),
-                                    ),
-                                  ),
-                                  foregroundDecoration: BoxDecoration(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(20)),
-                                    gradient: LinearGradient(
-                                      colors: [
-                                        Colors.deepPurple.withOpacity(0.8),
-                                        Colors.deepOrangeAccent.withOpacity(0.7)
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  margin: EdgeInsets.only(left: 30),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Padding(
-                                        padding: EdgeInsets.only(
-                                            top: 60, bottom: 70, left: 10),
-                                        child: Icon(
-                                          Icons.business_outlined,
-                                          size: 50,
-                                          color: Colors.white,
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding:
-                                            EdgeInsets.only(top: 100, left: 10),
-                                        child: Text(
-                                          'Modern Life',
-                                          style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsets.only(left: 10),
-                                        child: Text(
-                                          '117 spots',
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            )),
-                        Expanded(
-                          flex: 1,
-                          child: Stack(
-                            children: [
-                              Container(
-                                margin: EdgeInsets.all(10),
-                                clipBehavior: Clip.antiAlias,
-                                width: double.infinity,
-                                height: double.infinity,
-                                decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                    fit: BoxFit.cover,
-                                    image: NetworkImage(
-                                        'https://images.unsplash.com/photo-1609144514140-f8e5857feef7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3VuJTIwYmVhY2h8ZW58MHx8MHx8fDA%3D&w=1000&q=80'),
-                                  ),
-                                  borderRadius: BorderRadius.all(
-                                    Radius.circular(20),
-                                  ),
-                                ),
-                                foregroundDecoration: BoxDecoration(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20)),
-                                  gradient: LinearGradient(
-                                    colors: [
-                                      Color.fromARGB(255, 62, 126, 203)
-                                          .withOpacity(0.8),
-                                      Color.fromARGB(255, 248, 80, 217)
-                                          .withOpacity(0.8)
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Container(
-                                margin: EdgeInsets.only(left: 30),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsets.only(
-                                          top: 40, left: 10, bottom: 10),
-                                      child: Icon(
-                                        Icons.sunny,
-                                        size: 40,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                          EdgeInsets.only(left: 10, top: 20),
-                                      child: Text(
-                                        'Sun & Sund',
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsets.only(left: 10),
-                                      child: Text(
-                                        '147 spots',
-                                        style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            )
+            Row(
+              children: [
+                drow(
+                  Color.fromARGB(255, 24, 98, 210),
+                  const Color.fromARGB(255, 59, 23, 121),
+                ),
+                drow(
+                  Color.fromARGB(255, 251, 39, 237),
+                  Color.fromARGB(255, 21, 67, 219),
+                ),
+                drow(
+                  Color.fromARGB(255, 84, 245, 181),
+                  Color.fromARGB(255, 236, 109, 221),
+                ),
+                drow(
+                  Color.fromARGB(255, 253, 203, 55),
+                  Color.fromARGB(255, 244, 92, 255),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                drow(
+                  Color.fromARGB(255, 234, 239, 70),
+                  Color.fromARGB(255, 54, 109, 205),
+                ),
+                drow(
+                  Color.fromARGB(255, 251, 205, 39),
+                  Color.fromARGB(255, 189, 21, 219),
+                ),
+                drow(
+                  Color.fromARGB(255, 101, 109, 196),
+                  Color.fromARGB(255, 14, 59, 125),
+                ),
+                drow(
+                  Color.fromARGB(255, 95, 255, 165),
+                  Color.fromARGB(255, 11, 37, 121),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                drow(
+                  Color.fromARGB(255, 24, 98, 210),
+                  const Color.fromARGB(255, 59, 23, 121),
+                ),
+                drow(
+                  Color.fromARGB(255, 232, 172, 95),
+                  Color.fromARGB(255, 71, 5, 151),
+                ),
+                drow(
+                  Color.fromARGB(255, 245, 205, 84),
+                  Color.fromARGB(255, 32, 110, 163),
+                ),
+                drow(
+                  Color.fromARGB(255, 251, 145, 33),
+                  Color.fromARGB(255, 214, 26, 26),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                drow(
+                  Color.fromARGB(255, 24, 98, 210),
+                  const Color.fromARGB(255, 59, 23, 121),
+                ),
+                drow(
+                  Color.fromARGB(255, 251, 39, 237),
+                  Color.fromARGB(255, 21, 67, 219),
+                ),
+                drow(
+                  Color.fromARGB(255, 84, 245, 181),
+                  Color.fromARGB(255, 236, 109, 221),
+                ),
+                drow(
+                  Color.fromARGB(255, 253, 203, 55),
+                  Color.fromARGB(255, 244, 92, 255),
+                ),
+              ],
+            ),
           ],
         ),
       ),
     ),
   );
+}
+
+Widget drow(Color a, Color b) {
+  return Expanded(
+    child: Container(
+      margin: EdgeInsets.all(10),
+      width: 100,
+      height: 150,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Container(
+            width: 100,
+            height: 100,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  colors: [a, b],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight),
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(10), topRight: Radius.circular(10)),
+            ),
+          ),
+          Container(
+            width: 100,
+            height: 50,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(10),
+                  bottomRight: Radius.circular(10)),
+            ),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(left: 5, right: 5),
+                      width: 10,
+                      height: 10,
+                      decoration: BoxDecoration(
+                        color: a,
+                        shape: BoxShape.circle,
+                      ),
+                    ),
+                    Text(
+                      '${rgbToHex(a.red, a.green, a.blue)}'.toUpperCase(),
+                      style: TextStyle(color: a, fontWeight: FontWeight.w200),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(left: 5, right: 5),
+                      width: 10,
+                      height: 10,
+                      decoration: BoxDecoration(
+                        color: b,
+                        shape: BoxShape.circle,
+                      ),
+                    ),
+                    Text(
+                      '${rgbToHex(b.red, b.green, b.blue)}'.toUpperCase(),
+                      style: TextStyle(color: b, fontWeight: FontWeight.w200),
+                    ),
+                  ],
+                )
+              ],
+            ),
+          ),
+        ],
+      ),
+    ),
+  );
+}
+
+String rgbToHex(int r, int g, int b) {
+  String hexR = r.toRadixString(16).padLeft(2, '0');
+  String hexG = g.toRadixString(16).padLeft(2, '0');
+  String hexB = b.toRadixString(16).padLeft(2, '0');
+
+  String hexColor = '#$hexR$hexG$hexB';
+  return hexColor;
 }
