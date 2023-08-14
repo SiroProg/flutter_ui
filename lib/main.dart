@@ -14,11 +14,11 @@ void main() {
             decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Color.fromARGB(255, 0, 36, 16),
-                  Color.fromARGB(255, 85, 200, 91),
+                  Color.fromARGB(255, 255, 17, 65),
+                  Color.fromARGB(255, 50, 7, 111),
                 ],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
+                begin: Alignment.topRight,
+                end: Alignment.bottomLeft,
               ),
             ),
             child: Stack(
@@ -31,18 +31,18 @@ void main() {
                       shape: BoxShape.circle,
                       gradient: LinearGradient(
                         colors: [
-                          Color.fromARGB(255, 1, 44, 3),
-                          Color.fromARGB(255, 134, 243, 138),
+                          Color.fromARGB(255, 255, 17, 65),
+                          Color.fromARGB(255, 50, 7, 111),
                         ],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
+                        begin: Alignment.topRight,
+                        end: Alignment.bottomLeft,
                       ),
                     ),
                   ),
                 ),
                 Expanded(
                   child: Padding(
-                    padding: EdgeInsets.only(top: 200, left: 120),
+                    padding: EdgeInsets.only(top: 220, left: 100),
                     child: Container(
                       padding: EdgeInsets.all(4),
                       margin: EdgeInsets.only(left: 180, top: 200),
@@ -52,11 +52,11 @@ void main() {
                         shape: BoxShape.circle,
                         gradient: LinearGradient(
                           colors: [
-                            Color.fromARGB(255, 1, 44, 3),
-                            Color.fromARGB(255, 134, 243, 138),
+                            Color.fromARGB(255, 255, 17, 65),
+                            Color.fromARGB(255, 50, 7, 111),
                           ],
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
                         ),
                       ),
                       child: Container(
@@ -73,7 +73,7 @@ void main() {
                           children: [
                             Center(
                               child: Text(
-                                '140',
+                                '20',
                                 style: TextStyle(
                                   color: Colors.white,
                                 ),
@@ -100,7 +100,7 @@ void main() {
                 ),
                 Expanded(
                   child: Padding(
-                    padding: EdgeInsets.only(top: 210, left: 30),
+                    padding: EdgeInsets.only(top: 200, left: 300),
                     child: Text(
                       '#051E22',
                       style: TextStyle(color: Colors.white),
@@ -109,7 +109,7 @@ void main() {
                 ),
                 Expanded(
                   child: Padding(
-                    padding: EdgeInsets.only(top: 500, left: 360),
+                    padding: EdgeInsets.only(top: 500, left: 100),
                     child: Text(
                       '#051E22',
                       style: TextStyle(color: Colors.white),
