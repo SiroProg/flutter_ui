@@ -5,176 +5,122 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.white60,
-        body: Column(
-          children: [
-            Row(
-              children: [
-                drow(
-                  Color.fromARGB(255, 24, 98, 210),
-                  const Color.fromARGB(255, 59, 23, 121),
-                ),
-                drow(
-                  Color.fromARGB(255, 251, 39, 237),
-                  Color.fromARGB(255, 21, 67, 219),
-                ),
-                drow(
-                  Color.fromARGB(255, 84, 245, 181),
-                  Color.fromARGB(255, 236, 109, 221),
-                ),
-                drow(
-                  Color.fromARGB(255, 253, 203, 55),
-                  Color.fromARGB(255, 244, 92, 255),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                drow(
-                  Color.fromARGB(255, 234, 239, 70),
-                  Color.fromARGB(255, 54, 109, 205),
-                ),
-                drow(
-                  Color.fromARGB(255, 251, 205, 39),
-                  Color.fromARGB(255, 189, 21, 219),
-                ),
-                drow(
-                  Color.fromARGB(255, 101, 109, 196),
-                  Color.fromARGB(255, 14, 59, 125),
-                ),
-                drow(
-                  Color.fromARGB(255, 95, 255, 165),
-                  Color.fromARGB(255, 11, 37, 121),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                drow(
-                  Color.fromARGB(255, 24, 98, 210),
-                  const Color.fromARGB(255, 59, 23, 121),
-                ),
-                drow(
-                  Color.fromARGB(255, 232, 172, 95),
-                  Color.fromARGB(255, 71, 5, 151),
-                ),
-                drow(
-                  Color.fromARGB(255, 245, 205, 84),
-                  Color.fromARGB(255, 32, 110, 163),
-                ),
-                drow(
-                  Color.fromARGB(255, 251, 145, 33),
-                  Color.fromARGB(255, 214, 26, 26),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                drow(
-                  Color.fromARGB(255, 24, 98, 210),
-                  const Color.fromARGB(255, 59, 23, 121),
-                ),
-                drow(
-                  Color.fromARGB(255, 251, 39, 237),
-                  Color.fromARGB(255, 21, 67, 219),
-                ),
-                drow(
-                  Color.fromARGB(255, 84, 245, 181),
-                  Color.fromARGB(255, 236, 109, 221),
-                ),
-                drow(
-                  Color.fromARGB(255, 253, 203, 55),
-                  Color.fromARGB(255, 244, 92, 255),
-                ),
-              ],
-            ),
-          ],
-        ),
-      ),
-    ),
-  );
-}
-
-Widget drow(Color a, Color b) {
-  return Expanded(
-    child: Container(
-      margin: EdgeInsets.all(10),
-      width: 100,
-      height: 150,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Container(
-            width: 100,
-            height: 100,
-            decoration: BoxDecoration(
+        body: Container(
+          width: double.infinity,
+          height: double.infinity,
+          child: Container(
+            width: 300,
+            height: 300,
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
-                  colors: [a, b],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight),
-              borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(10), topRight: Radius.circular(10)),
+                colors: [
+                  Color.fromARGB(255, 0, 36, 16),
+                  Color.fromARGB(255, 85, 200, 91),
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
             ),
-          ),
-          Container(
-            width: 100,
-            height: 50,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(10),
-                  bottomRight: Radius.circular(10)),
-            ),
-            child: Column(
+            child: Stack(
               children: [
-                Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(left: 5, right: 5),
-                      width: 10,
-                      height: 10,
-                      decoration: BoxDecoration(
-                        color: a,
-                        shape: BoxShape.circle,
+                Center(
+                  child: Container(
+                    width: 250,
+                    height: 250,
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      gradient: LinearGradient(
+                        colors: [
+                          Color.fromARGB(255, 1, 44, 3),
+                          Color.fromARGB(255, 134, 243, 138),
+                        ],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
                       ),
                     ),
-                    Text(
-                      '${rgbToHex(a.red, a.green, a.blue)}'.toUpperCase(),
-                      style: TextStyle(color: a, fontWeight: FontWeight.w200),
-                    ),
-                  ],
+                  ),
                 ),
-                Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(left: 5, right: 5),
-                      width: 10,
-                      height: 10,
+                Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 200, left: 120),
+                    child: Container(
+                      padding: EdgeInsets.all(4),
+                      margin: EdgeInsets.only(left: 180, top: 200),
+                      width: 60,
+                      height: 60,
                       decoration: BoxDecoration(
-                        color: b,
                         shape: BoxShape.circle,
+                        gradient: LinearGradient(
+                          colors: [
+                            Color.fromARGB(255, 1, 44, 3),
+                            Color.fromARGB(255, 134, 243, 138),
+                          ],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                        ),
+                      ),
+                      child: Container(
+                        width: 20,
+                        height: 20,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.white,
+                            width: 2,
+                          ),
+                        ),
+                        child: Stack(
+                          children: [
+                            Center(
+                              child: Text(
+                                '140',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(top: 16, left: 37),
+                              width: 7,
+                              height: 7,
+                              padding: EdgeInsets.all(2),
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  color: Colors.white,
+                                  width: 1,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
-                    Text(
-                      '${rgbToHex(b.red, b.green, b.blue)}'.toUpperCase(),
-                      style: TextStyle(color: b, fontWeight: FontWeight.w200),
+                  ),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 210, left: 30),
+                    child: Text(
+                      '#051E22',
+                      style: TextStyle(color: Colors.white),
                     ),
-                  ],
+                  ),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 500, left: 360),
+                    child: Text(
+                      '#051E22',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
                 )
               ],
             ),
           ),
-        ],
+        ),
       ),
     ),
   );
-}
-
-String rgbToHex(int r, int g, int b) {
-  String hexR = r.toRadixString(16).padLeft(2, '0');
-  String hexG = g.toRadixString(16).padLeft(2, '0');
-  String hexB = b.toRadixString(16).padLeft(2, '0');
-
-  String hexColor = '#$hexR$hexG$hexB';
-  return hexColor;
 }
