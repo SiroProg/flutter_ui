@@ -9,32 +9,61 @@ void main() {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
-              margin: const EdgeInsets.only(top: 30),
-              child: const Center(
-                child: Text(
-                  "GRADIENT INSPIRATION",
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 25,
+            Row(
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(left: 170, top: 30),
+                  child: const Text(
+                    "#364649",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
+                ),
+                Container(
+                  width: 40,
+                  height: 40,
+                  margin: const EdgeInsets.only(left: 50, top: 40),
+                  decoration: const BoxDecoration(
+                      color: Color(0xFF364649),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(20),
+                      )),
+                ),
+              ],
+            ),
+            Container(
+              width: 200,
+              height: 200,
+              margin: const EdgeInsets.only(top: 10),
+              foregroundDecoration: const BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(50)),
+                gradient: LinearGradient(
+                  colors: [
+                    Color(0xFF364649),
+                    Color(0xFF708F96),
+                  ],
+                  begin: Alignment.topRight,
+                  end: Alignment.bottomLeft,
                 ),
               ),
             ),
             Row(
               children: [
                 Container(
-                  width: 50,
-                  height: 50,
-                  margin: const EdgeInsets.only(left: 100, top: 30),
+                  width: 40,
+                  height: 40,
+                  margin: const EdgeInsets.only(left: 155, top: 10),
                   decoration: const BoxDecoration(
-                      color: Color(0xFFE21C34),
+                      color: Color(0xFF708F96),
                       borderRadius: BorderRadius.all(
-                        Radius.circular(25),
+                        Radius.circular(20),
                       )),
                 ),
                 Container(
-                  margin: const EdgeInsets.only(left: 50, top: 30),
+                  margin: const EdgeInsets.only(left: 50, top: 15),
                   child: const Text(
                     "#E21C34",
                     style: TextStyle(
@@ -47,27 +76,27 @@ void main() {
               ],
             ),
             Container(
-              width: 280,
-              height: 280,
-              margin: EdgeInsets.only(top: 20),
+              width: 200,
+              height: 200,
+              margin: const EdgeInsets.only(top: 10),
               foregroundDecoration: const BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(15)),
+                borderRadius: BorderRadius.all(Radius.circular(50)),
                 gradient: LinearGradient(
                   colors: [
-                    Color(0xFFE21C34),
-                    Color(0xFF500B28),
+                    Color(0xFF708F96),
+                    Color(0xFFAA895F),
                   ],
                   begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
+                  end: Alignment.bottomLeft,
                 ),
               ),
             ),
             Row(
               children: [
                 Container(
-                  margin: const EdgeInsets.only(left: 150, top: 30),
+                  margin: const EdgeInsets.only(left: 170, top: 15),
                   child: const Text(
-                    "#E21C34",
+                    "#364649",
                     style: TextStyle(
                       fontSize: 20,
                       color: Colors.grey,
@@ -76,14 +105,56 @@ void main() {
                   ),
                 ),
                 Container(
-                  width: 50,
-                  height: 50,
-                  margin: const EdgeInsets.only(left: 100, top: 30),
+                  width: 40,
+                  height: 40,
+                  margin: const EdgeInsets.only(left: 50, top: 20),
                   decoration: const BoxDecoration(
-                      color: Color(0xFF500B28),
+                      color: Color(0xFFAA895F),
                       borderRadius: BorderRadius.all(
-                        Radius.circular(25),
+                        Radius.circular(20),
                       )),
+                ),
+              ],
+            ),
+            Container(
+              width: 200,
+              height: 200,
+
+              margin: const EdgeInsets.only(top: 10),
+              foregroundDecoration: const BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(50)),
+                gradient: LinearGradient(
+                  colors: [
+                    Color(0xFFAA895F),
+                    Color(0xFFE0D8CC),
+                  ],
+                  begin: Alignment.topRight,
+                  end: Alignment.bottomLeft,
+                ),
+              ),
+            ),
+            Row(
+              children: [
+                Container(
+                  width: 40,
+                  height: 40,
+                  margin: const EdgeInsets.only(left: 155, top: 10),
+                  decoration: const BoxDecoration(
+                      color: Color(0xFFE0D8CC),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(20),
+                      )),
+                ),
+                Container(
+                  margin: const EdgeInsets.only(left: 50, top: 15),
+                  child: const Text(
+                    "#E0D8CC",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
               ],
             ),
