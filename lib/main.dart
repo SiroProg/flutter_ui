@@ -4,98 +4,92 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Home Work",
       home: Scaffold(
+        backgroundColor: Colors.grey[300],
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              margin: const EdgeInsets.all(20),
-              child: const Text(
-                "Select Your Avatar",
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            Container(
-              margin: const EdgeInsets.all(20),
-              child: const CircleAvatar(
-                radius: 75,
-                backgroundImage: NetworkImage(
-                  "https://pbs.twimg.com/media/EmJM7q2WoAEbbLD.png",
+              margin: const EdgeInsets.only(top: 30),
+              child: const Center(
+                child: Text(
+                  "GRADIENT INSPIRATION",
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 25,
+                  ),
                 ),
               ),
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                build(
-                    "https://avatarko.ru/img/kartinka/2/zhivotnye_Novyj_god_krysa_1742.jpg"),
-                build("https://pbs.twimg.com/media/EmJMR0XWkAAjhNr.png"),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                build(
-                    "https://i.pinimg.com/736x/91/bb/57/91bb5782fadf21713330c978670f8c44.jpg"),
-                build("https://avatarko.ru/img/kartinka/1/krysa_Remi.jpg"),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                build(
-                    "https://avatarko.ru/img/kartinka/9/zhivotnye_krysa_8908.jpg"),
                 Container(
-                  margin: const EdgeInsets.all(10),
-                  child: CircleAvatar(
-                    radius: 50,
-                    child: Text(
-                      "+",
-                      style: TextStyle(
-                        fontSize: 40,
-                        color: Colors.blue,
-                      ),
+                  width: 50,
+                  height: 50,
+                  margin: const EdgeInsets.only(left: 100, top: 30),
+                  decoration: const BoxDecoration(
+                      color: Color(0xFFE21C34),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(25),
+                      )),
+                ),
+                Container(
+                  margin: const EdgeInsets.only(left: 50, top: 30),
+                  child: const Text(
+                    "#E21C34",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.bold,
                     ),
-                    backgroundColor: Colors.grey[200],
                   ),
                 ),
               ],
             ),
             Container(
-              margin: const EdgeInsets.only(left: 10, top: 20),
-              width: 200,
-              height: 40,
-              decoration: BoxDecoration(
-                color: Colors.blue,
-                borderRadius: BorderRadius.all(
-                  Radius.circular(20),
+              width: 280,
+              height: 280,
+              margin: EdgeInsets.only(top: 20),
+              foregroundDecoration: const BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(15)),
+                gradient: LinearGradient(
+                  colors: [
+                    Color(0xFFE21C34),
+                    Color(0xFF500B28),
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
                 ),
               ),
-              child: Center(
-                  child: Text(
-                'Select',
-                style: TextStyle(
-                  color: Colors.white,
+            ),
+            Row(
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(left: 150, top: 30),
+                  child: const Text(
+                    "#E21C34",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
-              )),
+                Container(
+                  width: 50,
+                  height: 50,
+                  margin: const EdgeInsets.only(left: 100, top: 30),
+                  decoration: const BoxDecoration(
+                      color: Color(0xFF500B28),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(25),
+                      )),
+                ),
+              ],
             ),
           ],
         ),
       ),
-    ),
-  );
-}
-
-Widget build(String imgUrl) {
-  return Container(
-    margin: const EdgeInsets.all(10),
-    child: CircleAvatar(
-      radius: 50,
-      backgroundImage: NetworkImage(imgUrl),
     ),
   );
 }
